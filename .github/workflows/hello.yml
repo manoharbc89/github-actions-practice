@@ -1,0 +1,26 @@
+# workflow [No indentation required for naming the workflow]
+# should Have Name 
+
+name: Hello
+# on tells when the workflow should run [give indentation by tab] 
+
+on: 
+  workflow_dispatch: 
+  
+# jobs tells what the workflows should do
+# should be inside the workflow
+# jobs is an object so needs indentation
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: say hello to everyone
+        run: echo "Hello Dosto"
+  
+
+# steps
+# should be inside the jobs
+
+# actions
+# should be inside the steps
